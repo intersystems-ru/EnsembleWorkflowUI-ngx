@@ -1,0 +1,46 @@
+<h3>Task details</h3>
+
+<div class="ui-g-12">
+  <div class="ui-g">
+    <div class="ui-g-4 ui-sm-6 task-details-label">Time Created:</div>
+    <div class="ui-g-8 ui-sm-6 task-details-text">{{task?.Task && task?.Task['%TaskStatus'].TimeCreated}}</div>
+
+    <div class="ui-g-4 ui-sm-6 task-details-label">Subject:</div>
+    <div class="ui-g-8 ui-sm-6 task-details-text">{{task?.Task && task?.Task['%Subject']}}</div>
+
+    <div class="ui-g-4 ui-sm-6 task-details-label">Message:</div>
+    <div class="ui-g-8 ui-sm-6 task-details-text">{{task?.Task && task?.Task['%Message']}}</div>
+
+    <div class="ui-g-4 ui-sm-6 task-details-label">Assigned To:</div>
+    <div class="ui-g-8 ui-sm-6 task-details-text">{{task?.Task && task?.Task['%TaskStatus'].AssignedTo}}</div>
+
+    <div class="ui-g-4 ui-sm-6 task-details-label">Priority:</div>
+    <div class="ui-g-8 ui-sm-6 task-details-text">{{task?.Task && task?.Task['%Priority']}}</div>
+
+    <div class="ui-g-4 ui-sm-6 task-details-label">Role:</div>
+    <div class="ui-g-8 ui-sm-6 task-details-text">{{task?.Task && task?.Task['%RoleName']}}</div>
+  </div>
+
+  <!-- list of inputs for each FormField of Workflow Task -->
+  <div class="form-fields">
+    <span class="ui-float-label"
+          *ngFor="let field of
+          (task?.Task && task?.Task['%FormFields']?.length && task?.Task['%FormFields'].split(',') || [])">
+      <input id="float-input" type="text" size="50" pInputText [(ngModel)]="task?.Task['%FormValues'][field]">
+      <label for="float-input">{{field}}</label>
+    </span>
+  </div>
+
+  <!-- list of buttons for each Action of Workflow Task -->
+  <div class="actions">
+    <div class="right-group">
+      <button *ngFor="let action of
+              (task?.Task && task?.Task['%Actions']?.length && task?.Task['%Actions'].split(',') || [])"
+              pButton type="button" label={{action}} class="action"
+              (click)="submitTask(action)"></button><!-- remove space between buttons
+      --><button pButton type="button" label="Save" class="ui-button-success action"
+                 (click)="submitTask('$Save')"></button>
+      <!-- Save button is always in place, because $Save is standard action -->
+    </div>
+  </div>
+</div>

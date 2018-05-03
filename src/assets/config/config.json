@@ -1,0 +1,8 @@
+{
+  "env": {
+    "name": "PROD"
+  },
+  "apiServer": {
+    "appName": "/wf-a/rest"
+  }
+}

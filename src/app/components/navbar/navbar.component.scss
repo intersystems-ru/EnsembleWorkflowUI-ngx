@@ -1,0 +1,20 @@
+nav {
+  height: 56px;
+  padding: 8px 50px;
+  background: #333;
+  box-sizing: border-box;
+  line-height: 40px;
+  color: #fff;
+  z-index: 20;
+}
+
+.right-group {
+  display: inline-block;
+  float: right;
+}
+
+.project-name {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 1em;
+}

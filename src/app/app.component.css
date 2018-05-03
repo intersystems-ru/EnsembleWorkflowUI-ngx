@@ -1,0 +1,20 @@
+main.app-main {
+  padding: 20px 50px;
+  min-height: calc(100vh - 146px);
+  margin-top: 56px;
+}
+
+footer.app-footer {
+  height: 50px;
+  line-height: 38px;
+  background: #fafafa;
+  font-size: 12px;
+}
+
+header.app-header {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}

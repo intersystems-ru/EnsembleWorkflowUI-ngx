@@ -1,0 +1,31 @@
+.table-caption {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.right-group {
+  line-height: 44px;
+  display: inline-block;
+  float: right;
+}
+
+.refresh-time {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.refresh-button {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  color: #555;
+}
+
+.total {
+  height: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  display: inline-block;
+}

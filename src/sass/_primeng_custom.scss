@@ -1,0 +1,25 @@
+.ui-widget-header {
+  background: #ebedf0;
+}
+
+.ui-table.ui-widget {
+  font-size: 0.8em;
+}
+
+.ui-table .ui-table-thead>tr>th,
+.ui-table .ui-table-tbody>tr>td,
+.ui-table .ui-table-tfoot>tr>td {
+  padding: .85em .7em;
+}
+
+.ui-table-caption, .ui-table-summary {
+  padding: .85em .7em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ui-paginator-bottom.ui-paginator {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}

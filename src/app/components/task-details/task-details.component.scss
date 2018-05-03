@@ -1,0 +1,45 @@
+.spinner-wrapper .spinner {
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  z-index: 10000;
+}
+
+.spinner-wrapper {
+  background: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.task-details-text {
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.task-details-label {
+  font-size: 0.8em;
+  line-height: 20px;
+}
+
+.form-fields {
+  margin: 20px 0;
+  padding: 0 .5em;
+}
+
+.actions {
+  padding: 20px .5em;
+  width: 100%;
+}
+
+.action:not(:last-child) {
+  margin-right: 7px;
+}
+
+.right-group {
+  display: inline-block;
+  float: right;
+}
