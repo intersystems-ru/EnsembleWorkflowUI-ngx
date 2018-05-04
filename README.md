@@ -26,7 +26,7 @@ To use the latest release, go to ‘Releases’ tab of this repository. Download
 ## Build from source
 To build application from source you need to install **Node.js** with **npm** package manager.
 Then, use following command inside source directory to install all the dependencies: `npm install`
-After that, use `npm run build` to build the application. Result application will be placed in `dist` directory.
+After that, use `npm run build` to build the application in development mode or `npm run build-prod` to build the application for production. Result application will be placed in `dist` directory.
 
 ## Config
 **Important**
