@@ -32,3 +32,8 @@ After that, use `npm run build` to build the application in development mode or 
 **Important**
 
 Go to `/assets/config/config.json` and set apiServer.appName to the name of you REST Application.
+
+## Screenshots
+
+![Workflow list](/screenshots/AngularWorkflow.png?raw=true "Screenshot 1")
+![Task details](/screenshots/AngularWorkflow2.png?raw=true "Screenshot 2")
